@@ -67,8 +67,8 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].each do |holiday, supplies|
     holiday.to_s.split("_").each do |word|
       word.capitalize!
+      puts holiday.join
     end
-    puts holiday
   end
 end
 
