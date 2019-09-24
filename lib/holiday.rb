@@ -66,6 +66,7 @@ def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
   winter_supplies = []
   holiday_hash[:winter].each do |holiday, supplies|
+    winter_supplies << supplies
     holiday = holiday.to_s.split("_")
     holiday.each do |word|
       word.capitalize!
@@ -73,7 +74,6 @@ def all_winter_holiday_supplies(holiday_hash)
     holiday = holiday.join(" ")
     supplies = supplies.join(", ")
     puts "#{holiday}: #{supplies}"
-    winter_supplies << supplies
   end
   winter_supplies  
 end
