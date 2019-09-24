@@ -71,7 +71,7 @@ def all_winter_holiday_supplies(holiday_hash)
     end
     holiday = holiday.join(" ")
     puts "#{holiday}: "
-    supplies.each {|supply| puts "#{supply}"
+    supplies.each {|supply| puts "#{supply}"}
   end
 end
 
